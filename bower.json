@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "description": "web app in nodeJs",
+  "main": "app.js",
+  "authors": [
+    "sahuri"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.5",
+    "angular-ui-router": "^1.0.5",
+    "angular-material": "^1.1.4"
+  }
+}
