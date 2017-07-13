@@ -15,7 +15,7 @@
         //,'angular-jinqjs'
         //,'app.component'
         //,'app.services'
-        ,'ngMaterial'
+       // ,'ngMaterial'
         //,'cl.paging'
         //, 'ngSanitize'
         ]);
@@ -30,8 +30,32 @@
                controller: 'dashboardController',
                controllerAs: 'vm',
                title: 'Dashboard'
+           }).state('lamps', {
+               url: '/',
+               templateUrl: 'lamps.html',
+               controller: 'lampsController',
+               controllerAs: 'vm',
+               title: 'Lamps'
+           }).state('gates', {
+               url: '/',
+               templateUrl: 'gates.html',
+               controller: 'gatesController',
+               controllerAs: 'vm',
+               title: 'Gates'
+           }).state('doors', {
+               url: '/',
+               templateUrl: 'doors.html',
+               controller: 'doorsController',
+               controllerAs: 'vm',
+               title: 'Doors'
+           }).state('myaccount', {
+               url: '/',
+               templateUrl: 'my-account.html',
+               controller: 'myaccountController',
+               controllerAs: 'vm',
+               title: 'My Account'
            });
-       /*$urlRouterProvider.otherwise('/');*/
+       $urlRouterProvider.otherwise('/');
    }  
     
 })();
